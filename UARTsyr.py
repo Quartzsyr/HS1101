@@ -30,7 +30,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         # 窗口设置
-        self.setWindowTitle("HS1101呼吸频率测量 by 石殷睿")  # 修改窗口标题
+        self.setWindowTitle("HS1101呼吸频率测量 by Quartz")  # 修改窗口标题
         self.setGeometry(100, 100, 800, 600)
 
         # 创建主控件
@@ -57,7 +57,7 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self.port_combo)
 
         # 显示学号和姓名
-        self.info_label = QLabel("学号: 2228410216  姓名: 石殷睿", self)
+        self.info_label = QLabel("Quartz", self)
         self.info_label.setStyleSheet("font-size: 16px; color: purple;")
         self.info_label.setAlignment(Qt.AlignCenter)  # 居中显示
         main_layout.addWidget(self.info_label)
